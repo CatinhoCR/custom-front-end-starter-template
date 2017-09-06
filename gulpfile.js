@@ -26,40 +26,36 @@ gulp.task('compress', function () {
 gulp.task('watch', function () {
     // Define server for browser sync
     browserSync.init({
-        proxy: 'http://www.bluemoonforms.loc'
+        proxy: 'http://www.custom-fe-template.loc'
+        //server: ''
     });
     gulp.watch("components/scripts/*.js", ['compress']);
     gulp.watch("components/styles/**/*.scss", ['sass']);
     gulp.watch("*.html").on('change', browserSync.reload);
 });
 
-// Run these tasks as default
-gulp.task('default', ['watch']);
-
-/*
 // Uglify Plugins
 gulp.task('uglifyPlugins', function() {
-    return gulp.src(['components/libs/bootstrap/dist/js/bootstrap.js',
-      'components/libs/jquery/dist/jquery.js'])
+    return gulp.src(['components/vendor/bootstrap/dist/js/bootstrap.js',
+      'components/vendor/jquery/dist/jquery.js', 'components/vendor/tether/dist/js/tether.js'])
       .pipe(rename({
         suffix: ".min",
         extname: ".js"
       }))
       .pipe(uglify())
-      .pipe(gulp.dest('js'));
+      .pipe(gulp.dest('./dist/js'));
   });
   
   // Minify Plugins CSS files
   gulp.task('minifyPlugins', function() {
-    return gulp.src(['components/libs/bootstrap/dist/css/bootstrap.css'])
+    return gulp.src(['components/vendor/bootstrap/dist/css/bootstrap.css'])
       .pipe(rename({
         suffix: ".min",
         extname: ".css"
       }))
       .pipe(minifyCss({compatibility: 'ie8'}))
-      .pipe(gulp.dest('css'));
+      .pipe(gulp.dest('./dist/css'));
   });
   
   gulp.task('build', ['uglifyPlugins', 'minifyPlugins']);
   gulp.task('default', ['watch']);
-  */

@@ -1,4 +1,11 @@
 .DS_Store
+ 
+# Node Modules
 node_modules/
+
+# Bower
 bower_components/
+components/vendor/
+
+# Compiled assets
 dist/

@@ -1,3 +1,6 @@
+// Inlude in asset pipeline in the gulpfile.js sass task
+@import "../vendor/bootstrap/scss/bootstrap";
+
 // Tools are for mixins, functions, etc
 @import "./tools/variables";
 @import "./tools/functions";

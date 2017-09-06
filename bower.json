@@ -1,0 +1,21 @@
+{
+  "name": "custom-frontend-template",
+  "description": "Front End Templating work in progress.",
+  "main": "",
+  "authors": [
+    "Andres.Castillo <andres.castillo@oktara.com>"
+  ],
+  "license": "IMT",
+  "homepage": "https://github.com/CatinhoCR/custom-front-end-template",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./components/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.6"
+  }
+}
