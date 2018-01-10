@@ -9,3 +9,8 @@ components/vendor/
 
 # Compiled assets
 dist/
+public/
+
+*.zip
+front/
+assets/vendor/**

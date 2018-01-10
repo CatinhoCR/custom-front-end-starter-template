@@ -1,15 +1,36 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>Static Basic FE Template with Bower and Gulp</title>
-</head>
-<body>
-    <h1>To do next</h1>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Static Basic FE Template with Bower and Gulp</title>
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="public/styles/styles.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h1>General To Do List</h1>
+    <ul>
+        <li>Gulp 'watch' only watches 1 scss file change, after that one it doesnt work anymore. The scripts one does though, which is weird.</li>
+    </ul>
+    <h2>
+        After Gulp workflow is done
+    </h2>
     <ul>
         <li>HTML skeleton</li>
         <li>Basic SCSS modules definition</li>
-        <li>Look at sage workflow to see what improvements are left to do here.</li>
     </ul>
-</body>
+    <!-- Handle dependency injection with asset-builder -->
+    <script src="assets/vendor/jquery/dist/jquery.js"></script>
+    <script src="public/scripts/component.js"></script>
+    <script src="public/scripts/main.js"></script>
+    </body>
 </html>

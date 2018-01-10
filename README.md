@@ -1,10 +1,10 @@
-A custom front end templating that follows Sage's theme workflow. Work in progress.
-# frontend-template
+# Front End Starter Setup
 In order to run the site locally you will need to have gulp and bower installed in your local machine.
 Run:
 npm install
 bower install
 
+## Deprecated. *** TO DO: Re-write this.
 Make sure to include the proxy server to the gulpfile.js (if using localhost virtual host entry)
 Or delete proxy line, and uncomment server line if serving statically from html folder.
 
